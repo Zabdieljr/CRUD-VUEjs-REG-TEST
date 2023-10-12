@@ -86,7 +86,7 @@ import Navbar from '../components/Navbar.vue';
 
         methods: {
             addUser(){
-                fetch('http://bezahive.win:8080/user/add', {
+                fetch('http://locahost:8080/user/add', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

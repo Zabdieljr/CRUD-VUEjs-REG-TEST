@@ -13,12 +13,6 @@
                     <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/employee">Employee List</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/add">Add Employee</a>
-                    </li>
 
                     <li class="nav-item">
                     <a class="nav-link" href="/user">User List</a>

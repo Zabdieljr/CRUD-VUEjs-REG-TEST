@@ -62,7 +62,7 @@ import Navbar from '../components/Navbar.vue'
 
         methods: {
             getUsers(){
-                fetch('http://bezahive.win:8080/users')
+                fetch('http://locahost:8080/users')
                 .then(res => res.json())
                 .then(data => {
                     this.users = data
@@ -70,7 +70,7 @@ import Navbar from '../components/Navbar.vue'
                 })
             },
             deleteUser(id){
-                fetch(`http://bezahive.win:8080/user/${id}`, {
+                fetch(`http://locahost:8080/user/${id}`, {
                     method: 'DELETE'
                 })
                 .then(data => {
