@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
@@ -27,9 +28,13 @@ public class UserController {
     }
 
     // getUserById
-    @RequestMapping("/user/{id}")
+    @GetMapping("/user/{id}")
     public User getUserById(@PathVariable("id") long id){
         return userService.getUserById(id);
+    }
+    @GetMapping("/user/email/{email}")
+    public User getUserbyEmail (@PathVariable("email") String  email){
+        return userService.findUserByEmail(email);
     }
 
     // getUsers
